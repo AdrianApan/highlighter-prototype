@@ -16,7 +16,7 @@ function useTextProcessor() {
     setShowUploader(false)
     setLoading(true)
     setTimeout(() => {
-      fetch('/sample_text.txt')
+      fetch('./sample_text.txt')
         .then(res => res.text())
         .then(text  => setText(text))
         setLoading(false)
