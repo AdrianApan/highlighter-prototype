@@ -1,0 +1,32 @@
+@import "../../styles/_variables.scss";
+
+.hightlight {
+  margin-bottom: 20px;
+  background: $light;
+
+  div {
+    padding: 10px;
+  }
+
+  .close {
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    right: -10px;
+    display: block;
+    opacity: 1;
+    border-radius: 30px;
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 7px;
+    background: $light;
+  }
+
+  .close:hover {
+    opacity: 1 !important;
+    border: 1px solid $primary !important;
+    background-color: $primary;
+    color: $light;
+  }
+}

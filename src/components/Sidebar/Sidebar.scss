@@ -1,0 +1,23 @@
+@import "../../styles/_variables.scss";
+
+.sidebar{
+  background-color: $smoke;
+  padding: 20px;
+  min-height: 100%;
+  overflow-y: auto;
+
+  .btn-outline-dark {
+    border-color: $warning;
+    color: $warning;
+    background-color: transparent;
+  }
+
+  .btn-outline-dark:hover {
+    background-color: $warning;
+    color: $light;
+  }
+
+  .buttons {
+    position: relative;
+  }
+}

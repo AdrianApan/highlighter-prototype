@@ -1,0 +1,75 @@
+@import "../../styles/_variables.scss";
+
+::selection {
+  background-color: $secondary;
+  color: $light;
+}
+
+.uploader{
+  text-align: center;
+  
+  .input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .input-file + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: $primary;
+    background-color: $light;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .input-file:focus + label,
+  .input-file + label:hover {
+    background-color: $light;
+  }
+
+  .inputfile + label * {
+    pointer-events: none;
+  }
+  
+  .btn-light{
+    border: 1px solid $smoke;
+    background-color: $smoke;
+  }
+
+  .btn-light:hover,
+  .btn-light:active,
+  .btn-light:focus,
+  .btn-light:active:focus{
+    border: 1px solid $primary;
+    background-color: $primary;
+    color: $light;
+    box-shadow: none;
+  }
+}
+
+.file-content{
+  padding: 20px;
+  text-align: left;
+  white-space: pre-wrap;
+
+  h1, h2, h3, h4, h5, h6 {
+    display: initial;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+  
+  mark {
+    padding: 0;
+  }
+  
+  // mark:hover {
+  //   box-shadow: 3px 3px 5px $primary;
+  //   opacity: 1;
+  // }
+}
