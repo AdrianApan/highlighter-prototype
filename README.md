@@ -1,7 +1,12 @@
 ## Highlighter Prototype
 
 Text highlighter built with React, JavaScript, Bootstrap, Node and Express.
+
 ![alt text](https://i.imgur.com/Qb0JZZq.png)
+
+## Demo
+
+[https://adrianapan.github.io/highlighter-prototype](https://adrianapan.github.io/highlighter-prototype)
 
 ## Installation
 
@@ -35,4 +40,4 @@ node server.js
 
 ### v0.1.0
 
-* First stable realease
+* First stable release
