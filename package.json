@@ -1,7 +1,6 @@
 {
 	"name": "highlighter-prototype",
 	"version": "0.1.0",
-	"homepage": "https://adrianapan.github.io/highlighter-prototype",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.28",
