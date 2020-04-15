@@ -23,25 +23,25 @@ function useTextProcessor() {
     }, 2000) // Mock loading
   }
 
-    // Handle file upload
-    function handleChange(event) {
-      const file = event.target.files[0]
-      const reader = new FileReader()
+  // Handle file upload
+  function handleChange(event) {
+    const file = event.target.files[0]
+    const reader = new FileReader()
 
-      reader.onprogress = event => {
-        setShowUploader(false)
-        setLoading(true)
-      }
-
-      reader.onload = event => {
-        setTimeout(() => {
-          setText(event.target.result)
-          setLoading(false)
-        }, 2000) // Mock loading to demonstrate read.onprogress
-      }
-
-      reader.readAsText(file)
+    reader.onprogress = event => {
+      setShowUploader(false)
+      setLoading(true)
     }
+
+    reader.onload = event => {
+      setTimeout(() => {
+        setText(event.target.result)
+        setLoading(false)
+      }, 2000) // Mock loading to demonstrate read.onprogress
+    }
+
+    reader.readAsText(file)
+  }
 
   // Get the user highlights and save it to state
   function selectedText() {
